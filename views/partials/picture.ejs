@@ -1,0 +1,17 @@
+<div class="py-1"><% const id = content.weather[0].id %>
+<% if(id>700 && id<782){ %>
+    <img class="mask" src="../images/images/mist.png" width="200" height="200">
+<% }else if(id === 800){ %>
+    <img class="mask" src="../images/images/clear.png" width="200" height="200">
+<% }else if(id>800 && id<805){ %>
+    <img class="mask" src="../images/images/clouds.png" width="200" height="200">
+<% }else if(id>599 && id<623){ %>
+    <img class="mask" src="../images/images/snow.png" width="200" height="200">
+<% }else if(id>499 && id<532){ %>
+    <img class="mask" src="../images/images/rain.png" width="200" height="200">
+<% }else if(id>299 && id<322){ %>
+    <img class="mask" src="../images/images/drizzle.png" width="200" height="200">
+<% }else{ %>
+    <img class="mask" src="../images/images/thunderstorm.png" width="200" height="200">
+<% } %>
+</div>
